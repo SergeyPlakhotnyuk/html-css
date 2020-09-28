@@ -1,0 +1,65 @@
+<!--
+    HW02 (Сверстать с помощью таблицы квадратик, похожий на сайт)
+    https://github.com/bcherepakha/SimpleTasks/blob/master/tables/simpleLayout.png
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple layout with CSS</title>
+</head>
+<style>
+    table {
+        margin: 0;
+        border-color: black;
+        border-width: 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20pt;
+        text-align: center;
+    }
+    td {
+        border-collapse: collapse;
+    }
+
+    .yellow {
+        background-color: goldenrod;
+        color: black;
+    }
+
+    #menu {
+        background-color: red;
+        color: black;
+    }
+
+    #newsfeed {
+        background-color: indianred;
+        color: white;
+    }
+
+    #navbar {
+        background-color: #333;
+        color: white;
+    }
+</style>
+
+<body>
+    <table border="1" cellpadding="20" cellspacing="0">
+        <tr>
+            <td colspan="3" class="yellow" style="padding-top: 40px; padding-bottom: 40px;">LOGO</td>
+            <td colspan="8" id="menu">MENU</td>
+        </tr>
+        <tr>
+            <td colspan="3" id="newsfeed" style="padding-top: 70px; padding-bottom: 70px;">NEWS<br>FEED</td>
+            <td colspan="5" class="yellow" style="padding-top: 70px; padding-bottom: 70px;">LIST<br>OF SOME<br>THING</td>
+            <td colspan="3" rowspan="2" id="navbar" style="padding-top: 70px; padding-bottom: 70px;">NAVI-<br>GATI<br>ON<br>BAR</td>
+        </tr>
+        <tr>
+            <td colspan="8" rowspan="1" class="yellow">FOOTER</td>
+        </tr>
+    </table>
+</body>
+
+</html>
