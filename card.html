@@ -14,11 +14,6 @@
         .card__row {
             display: flex;
             flex-direction: row;
-            
-        }
-
-        .card__row + .card_row {
-            margin-right: 45px;
         }
 
         .card {
@@ -31,6 +26,11 @@
             border-radius: 5px;
             padding-left: 15px;
             padding-right: 15px;
+            margin: 0 20px;
+        }
+
+        .card:nth-child(2) {
+            margin-left: 22px;
         }
 
         .card__title {
@@ -47,6 +47,7 @@
             width: 100%;
             justify-content: space-between;
             padding-bottom: 20px;
+            align-items: flex-end;
         }
 
         .card__itemcode {
@@ -61,6 +62,7 @@
         .card__itemprice {
             font-size: 1.1rem;
             font-weight: bold;
+            margin-top: -4px;
         }
 
         .card__statistic {
@@ -97,10 +99,11 @@
         }
 
         .card__image {
-            padding: 30px 20px 100% 20px;
+            height: 134px;
+            padding: 30px 0px 25px;
             align-items: center;
             background: url('img/cardImage.jpg');
-            background-repeat: no-repeat;
+            background-repeat:no-repeat;
             background-position-x: center;
             background-position-y: center;
         }
